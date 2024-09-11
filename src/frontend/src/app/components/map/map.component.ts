@@ -1,5 +1,5 @@
-import { Component, signal } from '@angular/core';
-import Map from '@arcgis/core/Map';
+import { Component, signal, inject } from '@angular/core';
+import { MapService } from '../../services/map.service';
 import SceneView from '@arcgis/core/views/SceneView';
 import '@arcgis/core/assets/esri/themes/dark/main.css';
 
@@ -11,7 +11,7 @@ import '@arcgis/core/assets/esri/themes/dark/main.css';
   styleUrl: './map.component.css',
 })
 export class MapComponent {
-  myMap = signal(new Map({ basemap: 'streets-navigation-vector' }));
+  myMap = signal(inject(MapService).myMap);
   sceneView = signal({});
 
   ngAfterViewInit() {

@@ -1,7 +1,7 @@
 import { Component, afterRender } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { MapComponent } from './map/map.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
+import { MapComponent } from './components/map/map.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-root',
