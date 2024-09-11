@@ -6,5 +6,5 @@ use rocket::fs::FileServer;
 #[launch]
 fn rocket() -> _ {
     rocket::build()
-    .mount("/", FileServer::from("/home/lvcky/projects/map/src/frontend/dist/frontend/browser"))
+    .mount("/", FileServer::from("/home/lvcky/projects/rust-map-service/src/frontend/dist/frontend/browser"))
 }

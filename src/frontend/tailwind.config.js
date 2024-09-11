@@ -1,7 +1,9 @@
 module.exports = {
-  content: ["./src/**/*.{html,ts}"],
+  mode: "jit",
+  purge: ["./src/**/*.html"],
   theme: {
-    extend: {},
+    // Your Tailwind theme configuration
   },
+  variants: {},
   plugins: [],
 };
